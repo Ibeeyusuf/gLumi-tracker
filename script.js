@@ -38,8 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
         showLoading();
         hideResults();
 
+        // Determine API base URL based on current environment
+        const isLocalFile = window.location.protocol === 'file:';
+        const apiBaseUrl = isLocalFile ? 'http://localhost:5000' : '';
+        
         // Make API request
-        fetch('/count-gLumi', {
+        fetch(`${apiBaseUrl}/count-gLumi`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
