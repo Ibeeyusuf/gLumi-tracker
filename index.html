@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gLumi Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>gLumi Tracker</h1>
+            <p>Track how many times you mentioned "gLumi"</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="usernameInput" 
+                    placeholder="Enter Twitter handle (e.g., @username)" 
+                    autocomplete="off"
+                >
+                <button id="searchBtn">Track gLumi Mentions</button>
+            </div>
+            
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Fetching tweets...</p>
+            </div>
+            
+            <div id="result" class="result hidden">
+                <div id="successResult" class="success-result hidden">
+                    <h2 id="resultMessage"></h2>
+                </div>
+                
+                <div id="errorResult" class="error-result hidden">
+                    <h2>Error</h2>
+                    <p id="errorMessage"></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>created by 0xIbee</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
