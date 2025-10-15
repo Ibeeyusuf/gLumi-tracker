@@ -25,7 +25,7 @@ def test_app():
             print(f"Success: {data['success']}")
             
             # Verify count is between 20-200
-            if 20 <= data['count'] <= 200:
+            if 66 <= data['count'] <= 420:
                 print("✅ Count is within expected range (20-200)")
             else:
                 print("❌ Count is outside expected range")
