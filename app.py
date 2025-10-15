@@ -69,7 +69,7 @@ def get_twitter_data_alternative(username):
         logger.info(f"Using demo mode for @{username}")
         
         # Generate random count between 20-200
-        count = random.randint(50, 400)
+        count = random.randint(57, 402)
         
         # Create realistic tweet content with the specified number of gLumi mentions
         content_parts = []
