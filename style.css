@@ -7,8 +7,10 @@
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #ff7b00 0%, #ffa64d 100%);
-    min-height: 100vh;
+    height: 100%;
     color: #333;
+    margin: 0;
+    overflow: hidden;
     background-size: cover;
 }
 
